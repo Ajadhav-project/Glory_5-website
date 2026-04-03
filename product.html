@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store - Glory_5</title>
+    <link rel="stylesheet" href="product.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="logo"><i class="fas fa-shopping-bag"></i> Glory_5</h1>
+                
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-link active" data-category="all">All</a></li>
+                    <li><a href="#" class="nav-link" data-category="male">Men</a></li>
+                    <li><a href="#" class="nav-link" data-category="female">Women</a></li>
+                    <li><a href="#" class="nav-link" data-category="kids">Kids</a></li>
+                   
+                </ul>
+                <div class="nav-icons">
+                    <span class="cart-count" id="cartCount">0</span>
+                    <i class="fas fa-shopping-cart" id="cartIcon"></i>
+                    <!-- <i class="fas fa-heart wishlist-icon" id="wishlistIcon"></i> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products-section">
+            <div class="container">
+                <h2 class="section-title">Our Collection</h2>
+                <div class="products-grid" id="productsGrid">
+                    <!-- Products will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Cart Modal -->
+        <div class="modal" id="cartModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Shopping Cart</h3>
+                    <span class="close" id="closeCart">&times;</span>
+                </div>
+                <div class="cart-items" id="cartItems">
+                    <p>Your cart is empty</p>
+                </div>
+                <div class="cart-total">
+                    <h4>Total: $<span id="cartTotal">0</span></h4>
+                </div>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+
+        <!-- Wishlist Modal -->
+        <div class="modal" id="wishlistModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Wishlist</h3>
+                    <span class="close" id="closeWishlist">&times;</span>
+                </div>
+                <div class="wishlist-items" id="wishlistItems">
+                    <p>Your wishlist is empty</p>
+                </div>
+            </div>
+        </div>
+    </main>
+<!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Glory_5</h3>
+                    <p>Your one-stop shop for premium fashion at unbeatable prices.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">cart</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Care</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get updates on new arrivals and exclusive offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Glory_5. All rights reserved. | Designed by Blackbox AI</p>
+            </div>
+        </div>
+    </footer>
+    <script src="product.js"></script>
+
+</body>
+</html>
